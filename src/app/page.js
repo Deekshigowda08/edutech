@@ -51,11 +51,12 @@ export default function Home() {
 
           {/* Inspirational Quote */}
           <div className="bg-black text-white text-center">
-            <h2 className="text-2xl md:text-3xl pt-5 font-bold ">
-            Genius is one percent inspiration and ninety-nine percent perspiration."
-            </h2>
-            <p className="text-sm pt-2">-Edison</p>
-          </div>
+  <h2 className="text-2xl md:text-3xl pt-5 font-bold ">
+    &quot;Genius is one percent inspiration and ninety-nine percent perspiration.&quot;
+  </h2>
+  <p className="text-sm pt-2">-Edison</p>
+</div>
+
 
           {/* Description */}
           <div className="bg-black text-white p-8">
