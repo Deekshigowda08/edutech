@@ -1,103 +1,90 @@
 import Image from "next/image";
+import Link from "next/link";
+import { Menu } from "lucide-react";
+import FeaturesSection from "./components/features-section";
+import Contact from "./components/contact";
+import CoursesSection from "./components/CoursesSection";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+    <div className="min-h-screen bg-white">
+      {/* Header */}
+<header className="border-b  w-full border-gray-200 py-4 bg-white z-50">
+  <div className="container mx-auto px-4 flex items-center justify-between">
+    {/* Menu Button */}
+    <button className="text-black">
+      <Menu className="h-8 w-8" />
+    </button>
+    {/* Logo and Title */}
+    <div className="absolute left-1/2 transform -translate-x-1/2">
+      <Link href="/" className="flex items-center">
         <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+          src="/images/ashwin_logo.jpg"
+          alt="EduTech Logo"
+          width={40}
+          height={40}
         />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+        <span className="text-2xl font-bold ml-2">EduTech</span>
+      </Link>
+    </div>
+    {/* Spacer for Header Balance */}
+    <div className="w-8"></div>
+  </div>
+</header>
+      {/* Hero Section */}
+      <section className="pt-2">
+        <div className="container min-w-full mx-auto ">
+          <h2 className="text-center text-lg uppercase  tracking-wider ">
+            Empowering the Innovators of Tomorrow with Knowledge and Experience
+          </h2>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          {/* Hero Image */}
+          <div className="max-w-4xl mb-1.5 mx-auto ">
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src="/images/8294.jpg"
+              alt="Students in a learning environment with presenter"
+              width={500}
+              height={400}
+              className="w-fit justify-center mx-auto "
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          </div>
+
+          {/* Inspirational Quote */}
+          <div className="bg-black text-white text-center">
+            <h2 className="text-2xl md:text-3xl pt-5 font-bold ">
+            Genius is one percent inspiration and ninety-nine percent perspiration."
+            </h2>
+            <p className="text-sm pt-2">-Edison</p>
+          </div>
+
+          {/* Description */}
+          <div className="bg-black text-white p-8">
+            <div className="max-w-6xl mx-auto">
+              <p className="text-lg leading-relaxed mb-6">
+                <span className="text-4xl font-serif leading-none ">W</span>
+                elcome to EduTech Online Courses, where learning meets
+                convenience! We offer a wide range of engaging and interactive
+                courses designed to suit all skill levels and interests. From
+                professional development to creative hobbies, our expert-led
+                programs ensure practical, real-world knowledge you can apply
+                immediately. With flexible schedules, a user-friendly platform,
+                and personalized support, we make learning accessible and
+                enjoyable. Whether you're mastering a new skill or exploring a
+                passion, EduTech is here to guide you every step of the way.
+                Join our community of learners today and unlock your potential,
+                all from the comfort of your home. Let's grow together!
+              </p>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <div>
+        <h1 className="max-w-screen text-center my-2 text-4xl font-bold  text-black ">Courses We Offer</h1>
+        </div>
+        
+      </section>
+      <CoursesSection />
+      <FeaturesSection />
+       <Contact />
     </div>
   );
 }
