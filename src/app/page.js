@@ -1,21 +1,47 @@
+"use client";
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Menu } from "lucide-react";
 import FeaturesSection from "./components/features-section";
 import Contact from "./components/contact";
 import CoursesSection from "./components/CoursesSection";
+import { IoClose } from "react-icons/io5";
 
 export default function Home() {
+  const [isSidebarOpen, setSidebarOpen] = useState(false);
+
+  const handleSidebarToggle = () => {
+    setSidebarOpen(!isSidebarOpen);
+  };
+
+  const handleOutsideClick = () => {
+    setSidebarOpen(false);
+  };
+
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+    setSidebarOpen(false); 
+  };
+
   return (
-    <div className="min-h-screen bg-white">
-      {/* Header */}
-      <header className="border-b w-full border-gray-200 py-4 bg-white z-50">
+    <div  onClick={handleOutsideClick} className="min-h-screen bg-white">
+
+      <header id="home" className="border-b w-full border-gray-200 py-4 bg-white z-50">
         <div className="container mx-auto px-4 flex items-center justify-between">
-          {/* Menu Button */}
-          <button className="text-black">
+          <button
+            className="text-black"
+            onClick={(e) => {
+              e.stopPropagation();
+              handleSidebarToggle(); // Avoid calling setSidebarOpen directly here
+            }}
+            
+          >
             <Menu className="h-8 w-8" />
           </button>
-          {/* Logo and Title */}
           <div className="absolute left-1/2 transform -translate-x-1/2">
             <Link href="/" className="flex items-center">
               <Image
@@ -27,9 +53,51 @@ export default function Home() {
               <span className="text-2xl font-bold ml-2">EduTech</span>
             </Link>
           </div>
-          {/* Spacer for Header Balance */}
           <div className="w-8"></div>
         </div>
+        {isSidebarOpen && (
+  <div
+    className="fixed top-0 left-0 h-full w-64 bg-gray-100 shadow-lg z-40"
+    onClick={(e) => e.stopPropagation()}
+  >
+    <nav className="flex flex-col p-4">
+     < div className="flex items-center justify-between mb-4">
+        <h2 className="text-lg font-bold">Menu</h2>
+        <button
+          className="text-black"
+          onClick={handleSidebarToggle}
+        >
+          <IoClose />
+        </button>
+      </div>
+      <button
+        className="my-2 mt-8 text-left text-lg font-semibold text-black"
+        onClick={() => scrollToSection("home")}
+      >
+        Home
+      </button>
+      <button
+        className="my-2 text-left text-lg font-semibold text-black"
+        onClick={() => scrollToSection("courses")}
+      >
+        Courses
+      </button>
+      <button
+        className="my-2 text-left text-lg font-semibold text-black"
+        onClick={() => scrollToSection("features")}
+      >
+        Explore
+      </button>
+      <button
+        className="my-2 text-left text-lg font-semibold text-black"
+        onClick={() => scrollToSection("contact")}
+      >
+        Contact
+      </button>
+    </nav>
+  </div>
+)}
+
       </header>
 
       {/* Hero Section */}
@@ -84,9 +152,9 @@ export default function Home() {
           </h1>
         </div>
       </section>
-      <CoursesSection />
-      <FeaturesSection />
-      <Contact />
+      <CoursesSection id="courses" />
+      <FeaturesSection id="features" />
+      <Contact id="contact" />
     </div>
   );
 }

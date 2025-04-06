@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { Instagram, Linkedin, MessageCircle, Youtube } from "lucide-react"
 
-export default function Contact() {
+export default function Contact({ id }) {
   const [email, setEmail] = useState("")
   const [message, setMessage] = useState("")
 
@@ -17,6 +17,7 @@ export default function Contact() {
   }
 
   return (
+    <section id={id} >
     <div className="flex flex-col min-h-screen">
       <main className="flex-1">
         <section className="w-full py-12 md:py-20 lg:py-20">
@@ -30,7 +31,7 @@ export default function Contact() {
           </div>
         </section>
 
-        <section className="w-full py-3 bg-black text-white">
+        <section className="w-full py-36 md:py-3 bg-black text-white">
           <div className="container px-4 md:px-6 mx-auto">
             <div className="flex flex-col items-center justify-center space-y-8">
               <h2 className="text-3xl md:text-4xl font-bold text-center">Send an Email</h2>
@@ -114,6 +115,7 @@ export default function Contact() {
         </div>
       </footer>
     </div>
+    </section>
   )
 }
 

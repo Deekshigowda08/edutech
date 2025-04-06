@@ -1,9 +1,8 @@
 import Image from "next/image"
 
-export default function FeaturesSection() {
+export default function FeaturesSection({ id }) {
   return (
-    <section className="features-section">
-      {/* Feature 1: Trainers */}
+    <section id={id} className="features-section">
       <div className="flex flex-col md:flex-row items-center bg-white py-12 px-6 md:px-12">
         <div className="md:w-1/3 mb-6 md:mb-0">
           <Image
