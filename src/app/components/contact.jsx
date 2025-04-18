@@ -140,7 +140,7 @@ export default function Contact({ id }) {
       <footer className="w-full py-6 bg-black text-white">
         <div className="container px-4 md:px-6 mx-auto">
           <div className="flex justify-center">
-            <p className="text-sm">Copyright @ 2025 BRAVYNEX</p>
+            <p className="text-sm">Address : Mangalore, Dakshina Kannada, Karnataka, India.</p>
           </div>
         </div>
       </footer>

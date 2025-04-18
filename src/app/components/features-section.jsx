@@ -15,10 +15,7 @@ export default function FeaturesSection({ id }) {
         </div>
         <div className="md:w-2/3 md:pl-8">
           <p className="text-lg md:text-xl leading-relaxed mb-6">
-            Our trainers are industry experts with years of practical experience and a passion for teaching. They bring
-            in-depth knowledge, real-world insights, and engaging teaching methods to every course. Dedicated to your
-            success, they provide guidance, support, and inspiration, ensuring a fulfilling and effective learning
-            experience for all our students.
+          Our trainers are industry experts with over 15 years of practical experience and a passion for teaching. They bring in-depth knowledge, real-world insights, and engaging teaching methods to every course. Dedicated to your success, they provide guidance, support, and inspiration, ensuring a fulfilling and effective learning experience for all our students.
           </p>
           
         </div>
@@ -37,10 +34,7 @@ export default function FeaturesSection({ id }) {
         </div>
         <div className="md:w-2/3 md:pr-8">
           <p className="text-lg md:text-xl leading-relaxed mb-6">
-            Collaboration is at the heart of our success. We work closely with industry leaders, educators, and
-            organizations to design impactful courses. Through partnerships, we ensure our content stays relevant and
-            insightful, blending expertise and innovation. Together, we empower learners to achieve their goals and make
-            meaningful progress in their journeys.
+          Collaboration is at the heart of our success. We work closely with industry leaders, educators, and organizations to design impactful courses. Through partnerships, we ensure our content stays relevant and insightful, blending expertise and innovation. Together, we empower learners to achieve their goals and make meaningful progress in their journeys. Additionally, we provide internship opportunities to give learners hands-on experience, bridging the gap between theory and practice and preparing them for real-world challenges.
           </p>
          
         </div>
@@ -59,10 +53,7 @@ export default function FeaturesSection({ id }) {
         </div>
         <div className="md:w-2/3 md:pl-8">
           <p className="text-lg md:text-xl leading-relaxed mb-6">
-            Our students love the flexibility, expert-led courses, and practical knowledge they gain. They appreciate
-            the interactive learning experience and the personalized support they receive. Many have shared how our
-            courses helped them achieve their goals, boost their careers, or explore new passions. Their success stories
-            inspire us to keep delivering excellence!
+          Our students love the flexibility, expert-led courses, and practical knowledge they gain. They appreciate the interactive learning experience and the personalized support they receive. Many have shared how our courses helped them achieve their goals, boost their careers, or explore new passions. Their success stories inspire us to keep delivering excellence! With pride, we can say that we have successfully trained over 500 students, empowering them to make meaningful progress in their journeys.
           </p>
          
         </div>

@@ -110,10 +110,10 @@ export default function Home() {
           {/* Hero Image */}
           <div className="max-w-4xl mb-1.5 mx-auto">
             <Image
-              src="/images/8294.jpg"
+              src="/images/firstpage.png"
               alt="Students in a learning environment with presenter"
-              width={500}
-              height={400}
+              width={200}
+              height={100}
               className="w-fit justify-center mx-auto"
             />
           </div>

@@ -60,6 +60,13 @@ export default function CoursesSection() {
       image: "/images/7117747_3343150.jpg?height=200&width=200",
       link: "/pagenotfound",
     },
+    {
+      id: 9,
+      title: "TECHNICAL AND NON TECHNICAL",
+      description: "welcome you to our training program, where we offer a unique blend of technical and non-technical courses designed to empower individuals with the skills they need to excel in today's competitive job market.",
+      image: "/images/7117747_3343150.jpg?height=200&width=200",
+      link: "/pagenotfound",
+    },
   ];
 
   return (
