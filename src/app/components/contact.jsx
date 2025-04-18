@@ -1,24 +1,53 @@
 "use client"
 
 import { useState } from "react"
+import emailjs from "emailjs-com";
+import { ToastContainer, toast } from "react-toastify"
+import "react-toastify/dist/ReactToastify.css"
 import { Instagram, Linkedin, MessageCircle, Youtube } from "lucide-react"
+import { useRef } from "react"
 
 export default function Contact({ id }) {
   const [email, setEmail] = useState("")
   const [message, setMessage] = useState("")
+  const formRef = useRef(null)
+
+  function sendEmail(formData) {
+    const serviceId = "service_3u9meos"; 
+    const templateId = "template_xr75hbg"; 
+    const userId = "OPsujXRZ5eRE8OQ4-"; 
+   
+  
+    emailjs.send(serviceId, templateId, formData, userId)
+      .then((response) => {
+        console.log("Email sent successfully!", response.status, response.text);
+        formRef.current.removeAttribute("disabled");
+      })
+      .catch((error) => {
+        console.error("Failed to send email.", error);
+      });
+  }
+
+
+
 
   const handleSubmit = (e) => {
-    e.preventDefault()
-    // Handle form submission logic here
-    console.log({ email, message })
-    // Reset form
-    setEmail("")
-    setMessage("")
-  }
+    e.preventDefault();
+    formRef.current.setAttribute("disabled", "true");
+    sendEmail({ email, message });
+    setEmail("");
+    setMessage("");
+    toast("Message sent successfully!", { type: "success" });
+    setTimeout(() => {
+      formRef.current.removeAttribute("disabled");
+    }, 2000);
+  };
+
 
   return (
     <section id={id} >
     <div className="flex flex-col min-h-screen">
+      <ToastContainer />
       <main className="flex-1">
         <section className="w-full py-12 md:py-20 lg:py-20">
           <div className="container px-4 md:px-6 mx-auto">
@@ -57,6 +86,7 @@ export default function Contact({ id }) {
                 </div>
                 <div className="flex justify-center">
                   <button
+                  ref={formRef}
                     className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-white text-black font-medium"
                     type="submit"
                   >
@@ -66,15 +96,15 @@ export default function Contact({ id }) {
               </form>
 
               <div className="flex items-center justify-center space-x-6 mt-2">
-                <a href="#" className="text-white hover:text-gray-200">
+                <a href="https://Wa.me/+919353164806" className="text-white hover:text-gray-200">
                   <span className="sr-only">Instagram</span>
                   <Instagram className="h-6 w-6" />
                 </a>
-                <a href="#" className="text-white hover:text-gray-200">
+                <a href="https://Wa.me/+919353164806" className="text-white hover:text-gray-200">
                   <span className="sr-only">WhatsApp</span>
                   <MessageCircle className="h-6 w-6" />
                 </a>
-                <a href="#" className="text-white hover:text-gray-200">
+                <a href="https://Wa.me/+919353164806" className="text-white hover:text-gray-200">
                   <span className="sr-only">Twitter</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -93,11 +123,11 @@ export default function Contact({ id }) {
                     <line x1="10" y1="12.2" x2="14" y2="12.2" />
                   </svg>
                 </a>
-                <a href="#" className="text-white hover:text-gray-200">
+                <a href="https://Wa.me/+919353164806" className="text-white hover:text-gray-200">
                   <span className="sr-only">LinkedIn</span>
                   <Linkedin className="h-6 w-6" />
                 </a>
-                <a href="#" className="text-white hover:text-gray-200">
+                <a href="https://Wa.me/+919353164806" className="text-white hover:text-gray-200">
                   <span className="sr-only">YouTube</span>
                   <Youtube className="h-6 w-6" />
                 </a>
@@ -110,7 +140,7 @@ export default function Contact({ id }) {
       <footer className="w-full py-6 bg-black text-white">
         <div className="container px-4 md:px-6 mx-auto">
           <div className="flex justify-center">
-            <p className="text-sm">Copyright @ 2025 EduTech</p>
+            <p className="text-sm">Copyright @ 2025 BRAVYNEX</p>
           </div>
         </div>
       </footer>

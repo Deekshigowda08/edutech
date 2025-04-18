@@ -45,12 +45,12 @@ export default function Home() {
           <div className="absolute left-1/2 transform -translate-x-1/2">
             <Link href="/" className="flex items-center">
               <Image
-                src="/images/ashwin_logo.jpg"
-                alt="EduTech Logo"
-                width={40}
-                height={40}
+                src="/images/ashwin_logo.png"
+                alt="Bravynex Logo"
+                width={100}
+                height={100}
               />
-              <span className="text-2xl font-bold ml-2">EduTech</span>
+              <span className="text-2xl font-bold ml-2">BRAVYNEX</span>
             </Link>
           </div>
           <div className="w-8"></div>
@@ -131,7 +131,7 @@ export default function Home() {
             <div className="max-w-6xl mx-auto">
               <p className="text-lg leading-relaxed mb-6">
                 <span className="text-4xl font-serif leading-none">W</span>
-                elcome to EduTech Online Courses, where learning meets
+                elcome to Bravynex Online Courses, where learning meets
                 convenience! We offer a wide range of engaging and interactive
                 courses designed to suit all skill levels and interests. From
                 professional development to creative hobbies, our expert-led
@@ -139,7 +139,7 @@ export default function Home() {
                 immediately. With flexible schedules, a user-friendly platform,
                 and personalized support, we make learning accessible and
                 enjoyable. Whether you&apos;re mastering a new skill or exploring a
-                passion, EduTech is here to guide you every step of the way. Join
+                passion, Bravynex is here to guide you every step of the way. Join
                 our community of learners today and unlock your potential, all
                 from the comfort of your home. Let&apos;s grow together!
               </p>

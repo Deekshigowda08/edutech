@@ -20,11 +20,7 @@ export default function FeaturesSection({ id }) {
             success, they provide guidance, support, and inspiration, ensuring a fulfilling and effective learning
             experience for all our students.
           </p>
-          <div className="flex justify-end">
-            <button className="bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition-colors">
-              Explore →
-            </button>
-          </div>
+          
         </div>
       </div>
 
@@ -46,11 +42,7 @@ export default function FeaturesSection({ id }) {
             insightful, blending expertise and innovation. Together, we empower learners to achieve their goals and make
             meaningful progress in their journeys.
           </p>
-          <div className="flex justify-start">
-            <button className="bg-white text-black px-6 py-3 rounded-full hover:bg-gray-200 transition-colors">
-              Explore →
-            </button>
-          </div>
+         
         </div>
       </div>
 
@@ -72,11 +64,7 @@ export default function FeaturesSection({ id }) {
             courses helped them achieve their goals, boost their careers, or explore new passions. Their success stories
             inspire us to keep delivering excellence!
           </p>
-          <div className="flex justify-end">
-            <button className="bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition-colors">
-              Explore →
-            </button>
-          </div>
+         
         </div>
       </div>
 
@@ -98,11 +86,7 @@ export default function FeaturesSection({ id }) {
             Engaging workshops, live Q&A sessions, and hands-on projects made learning interactive and impactful,
             empowering students to excel in their chosen fields
           </p>
-          <div className="flex justify-start">
-            <button className="bg-white text-black px-6 py-3 rounded-full hover:bg-gray-200 transition-colors">
-              Explore →
-            </button>
-          </div>
+          
         </div>
       </div>
     </section>

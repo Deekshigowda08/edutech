@@ -12,9 +12,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "EduTech",
+  title: "BravyNex",
   icons: {
-    icon: "/images/ashwin_logo.jpg",
+    icon: "/images/ashwin_logo.png",
   },
   keywords: ["education", "technology", "courses", "learning"],
   authors: [{ name: "Ashwin" }],
@@ -27,7 +27,7 @@ export const metadata = {
     siteName: "EduTech",
     images: [
       {
-        url: "/images/ashwin_logo.jpg",
+        url: "/images/ashwin_logo.png",
         width: 800,
         height: 600,
       },

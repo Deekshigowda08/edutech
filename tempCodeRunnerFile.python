@@ -1,0 +1,10 @@
+def ransom(str1,str2):
+    stack =[]
+    for j in str1:
+        stack.append(j)
+     
+    for i in str2:
+        if i in stack:
+            stack.remove(i)
+    print("YES" if len(stack)==0 else "NO")
+ransom("eekshhh","deekshith")
