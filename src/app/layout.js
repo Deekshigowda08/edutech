@@ -21,10 +21,10 @@ export const metadata = {
   creator: "Ashwin",
   publisher: "Ashwin",
   openGraph: {
-    title: "EduTech",
+    title: "BravyNex",
     description: "Empowering the Innovators of Tomorrow with Knowledge and Experience",
-    url: "https://edutech.com",
-    siteName: "EduTech",
+    url: "https://BravyNex.com",
+    siteName: "BravyNex",
     images: [
       {
         url: "/images/ashwin_logo.png",
