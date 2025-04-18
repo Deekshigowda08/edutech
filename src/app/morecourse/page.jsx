@@ -77,8 +77,8 @@ export default function CoursesSection() {
           <Image
             src="/images/ashwin_logo.png"
             alt="bravynex Logo"
-            width={40}
-            height={40}
+            width={100}
+            height={100}
           />
           <span className="text-2xl font-bold ml-2">BRAVYNEX</span>
         </Link>
