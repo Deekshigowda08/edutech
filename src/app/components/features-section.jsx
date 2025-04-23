@@ -6,7 +6,7 @@ export default function FeaturesSection({ id }) {
       <div className="flex flex-col md:flex-row items-center bg-white py-12 px-6 md:px-12">
         <div className="md:w-1/3 mb-6 md:mb-0">
           <Image
-            src="/images/8449776_3907915.jpg?height=250&width=250"
+            src="/images/pic4.png?height=250&width=250"
             alt="Trainer teaching a student"
             width={250}
             height={250}
@@ -25,7 +25,7 @@ export default function FeaturesSection({ id }) {
       <div className="flex flex-col md:flex-row-reverse items-center bg-black text-white py-12 px-6 md:px-12">
         <div className="md:w-1/3 mb-6 md:mb-0">
           <Image
-            src="/images/partnership-concept-illustration.png?height=250&width=250"
+            src="/images/pic.png?height=250&width=250"
             alt="Collaboration illustration"
             width={250}
             height={250}
@@ -44,7 +44,7 @@ export default function FeaturesSection({ id }) {
       <div className="flex flex-col md:flex-row items-center bg-white py-12 px-6 md:px-12">
         <div className="md:w-1/3 mb-6 md:mb-0">
           <Image
-            src="/images/137951224_10308906.jpg?height=250&width=250"
+            src="/images/pic2.png?height=250&width=250"
             alt="Students with questions"
             width={250}
             height={250}
@@ -63,7 +63,7 @@ export default function FeaturesSection({ id }) {
       <div className="flex flex-col md:flex-row-reverse items-center bg-black text-white py-12 px-6 md:px-12">
         <div className="md:w-1/3 mb-6 md:mb-0">
           <Image
-            src="/images/hand-drawn-online-tutor-illustration.png?height=250&width=250"
+            src="/images/pic5.png?height=250&width=250"
             alt="Digital learning illustration"
             width={250}
             height={250}
