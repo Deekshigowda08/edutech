@@ -57,7 +57,7 @@ const coursesData = [
     "id": 4,
     "title": "EmbeddedTraining",
     "description": "A specialized course focused on embedded systems and real-time programming.",
-    "imageUrl": "/images/IMG-20250418-WA0142.jpg?height=300&width=300",
+    "imageUrl": "/images/IMG-20250418-WA0142.jpg",
     "topics": [
       "Get introduced to embedded systems, their applications, and their critical role in modern devices and technologies.",
       "Learn to program microcontrollers such as Arduino or STM32 and interface them with sensors and actuators for real-world applications.",
@@ -83,7 +83,7 @@ const coursesData = [
   {
     "id": 6,
     "title": "C++",
-    "imageUrl": "/images/file_00000000c4a4622f8a7a7441d8a620e7a_conversation_id=68063876-dbc8-8006-85e2-545d5e982bc8&message_id=fb9bc7eb-6d3c-47ac-b394-9253c42a0491.png?height=300&width=300",
+    "imageUrl": "/images/code.png",
     "description": "A foundational course focusing on essential C++ programming concepts and application development.",
     "topics": [
       "Start by setting up your development environment with tools like MSYS2 and Visual Studio Code for seamless C++ programming.",
@@ -96,7 +96,7 @@ const coursesData = [
       {
         "id": 7,
         "title": "Java",
-        "imageUrl": "/images/file_00000000c4a4622f8a7a7441d8a620e7a_conversation_id=68063876-dbc8-8006-85e2-545d5e982bc8&message_id=fb9bc7eb-6d3c-47ac-b394-9253c42a0491.png?height=300&width=300",
+        "imageUrl": "/images/java.png",
         "description": "An introductory course covering essential Java programming concepts and web development.",
         "topics": [
           "Java serves as the backbone for creating interactive and dynamic web experiences. The course begins with setting up the development environment, including tools such as Node.js and VS Code, enabling participants to write their first Java program.",
@@ -111,7 +111,7 @@ const coursesData = [
       {
         "id": 8,
         "title": "Python",
-        "imageUrl": "/images/6199076_3190343.jpg",
+        "imageUrl": "/images/IMG-20250418-WA0138.jpg",
         "description": "An introductory course covering foundational Python programming concepts and practical applications.",
         "topics": [
           "Python is one of the most versatile and user-friendly programming languages, making it ideal for beginners and professionals alike. The course starts with installing Python and setting up tools like Jupyter Notebook or PyCharm.",
@@ -126,7 +126,7 @@ const coursesData = [
       {
         "id": 9,
         "title": "AiDevOps",
-        "imageUrl": "/images/11668829_20945391.jpg?height=300&width=300",
+        "imageUrl": "/images/IMG-20250418-WA0144.jpg",
         "description": "A course detailing the integration of AI techniques into DevOps workflows for enhanced automation and efficiency.",
         "topics": [
           "The course begins with an introduction to DevOps principles, focusing on practices like continuous integration, continuous delivery, and infrastructure as code.",
@@ -141,7 +141,7 @@ const coursesData = [
       {
         "id": 10,
         "title": "FDPProgram",
-        "imageUrl": "/images/file_00000000158c622fa2a6a8fc591061e5_conversation_id=680644b7-f90c-8006-bb24-d26b133d85ac&message_id=bf72fc03-bb7d-4ed0-bba4-248b0615412f.png",
+        "imageUrl": "/images/pic3.png",
         "description": "A Faculty Development Program aimed at enhancing teaching techniques and professional growth.",
         "topics": [
           "The program starts with modern pedagogical approaches, helping educators create engaging and effective learning experiences.",
@@ -183,7 +183,7 @@ const coursesData = [
       {
         "id": 13,
         "title": "StartupTraining",
-        "imageUrl":"/images/file_00000000db7c622fa751207e560189b8_conversation_id=680644b7-f90c-8006-bb24-d26b133d85ac&message_id=a439cad4-6c9a-4e8e-8f7d-017d116e61b3.png",
+        "imageUrl":"/images/startup.png",
         "description": "A specialized course for aspiring entrepreneurs focusing on the essentials of launching a startup.",
         "topics": [
           "The course begins with ideation, guiding participants through validating ideas using market research and feasibility analysis.",
@@ -197,7 +197,7 @@ const coursesData = [
           {
             "id": 14,
             "title": "TechnicalandNon-TechnicalSkills",
-            "imageUrl": "/images/file_00000000469c61f8920a65222f5565e9_conversation_id=68063876-dbc8-8006-85e2-545d5e982bc8&message_id=5be18137-c0eb-4f74-871a-8761b81d8ab5.png",
+            "imageUrl": "/images/pic4.png",
             "description": "A comprehensive course designed to enhance both technical and interpersonal skills for well-rounded professional development and career growth.",
             "topics": [
               "This course provides a balanced approach to developing both technical and non-technical skills. Participants gain expertise in coding, data analysis, and mastering software tools critical to modern workplaces. Topics covered include programming languages, database management, and data visualization techniques.",
