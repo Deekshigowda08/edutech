@@ -9,7 +9,7 @@ const coursesData = [
     "id": 1,
     "title": "WebDevelopment",
     "description": "A comprehensive course to equip you with the skills required to build modern, responsive, and dynamic websites.",
-    "imageUrl": "/images/IMG-20250418-WA0138.jpg?height=200&width=200",
+    "imageUrl": "/images/IMG-20250418-WA0138.jpg",
     "topics": [
       "Start by understanding web fundamentals, including how the internet works, client-server architecture, HTTP/HTTPS protocols, and the role of browsers.",
       "Learn HTML5 for structuring web content effectively, including semantic tags, forms, multimedia integration, and accessibility principles for inclusive design.",
@@ -27,7 +27,7 @@ const coursesData = [
     "id": 2,
     "title": "GraphicDesigning",
     "description": "A creative course covering essential graphic design principles, tools, and real-world applications.",
-    "imageUrl": "/images/random.png?height=200&width=200",
+    "imageUrl": "/images/random.png",
     "topics": [
       "Learn the foundational principles of graphic design, including color theory, typography, grid systems, and layout composition for impactful visuals.",
       "Gain proficiency in industry-standard tools such as Adobe Photoshop, Illustrator, and Canva through hands-on projects.",
@@ -42,7 +42,7 @@ const coursesData = [
     "id": 3,
     "title": "CProgramming",
     "description": "A technical course introducing the foundations of programming with C language.",
-    "imageUrl": "/images/IMG-20250418-WA0139.jpg?height=200&width=200",
+    "imageUrl": "/images/IMG-20250418-WA0139.jpg",
     "topics": [
       "Begin with an introduction to C programming, setting up the environment, and writing your first basic program.",
       "Learn the syntax and fundamentals, including data types, variables, constants, and operators, to build a strong coding foundation.",
@@ -71,7 +71,7 @@ const coursesData = [
     "id": 5,
     "title": "AIDataEngineering",
     "description": "An advanced course on data engineering techniques for AI applications.",
-    "imageUrl": "/images/IMG-20250418-WA0144.jpg?height=200&width=200",
+    "imageUrl": "/images/IMG-20250418-WA0144.jpg",
     "topics": [
       "Understand the critical role of data engineering in enabling AI workflows and managing large-scale datasets effectively.",
       "Learn to preprocess data through techniques like cleaning, transformation, and feature selection, ensuring high-quality inputs for AI models.",
@@ -111,7 +111,7 @@ const coursesData = [
       {
         "id": 8,
         "title": "Python",
-        "imageUrl": "/images/6199076_3190343.jpg?height=200&width=200",
+        "imageUrl": "/images/6199076_3190343.jpg",
         "description": "An introductory course covering foundational Python programming concepts and practical applications.",
         "topics": [
           "Python is one of the most versatile and user-friendly programming languages, making it ideal for beginners and professionals alike. The course starts with installing Python and setting up tools like Jupyter Notebook or PyCharm.",
@@ -141,7 +141,7 @@ const coursesData = [
       {
         "id": 10,
         "title": "FDPProgram",
-        "imageUrl": "/images/file_00000000158c622fa2a6a8fc591061e5_conversation_id=680644b7-f90c-8006-bb24-d26b133d85ac&message_id=bf72fc03-bb7d-4ed0-bba4-248b0615412f.png?height=200&width=200",
+        "imageUrl": "/images/file_00000000158c622fa2a6a8fc591061e5_conversation_id=680644b7-f90c-8006-bb24-d26b133d85ac&message_id=bf72fc03-bb7d-4ed0-bba4-248b0615412f.png",
         "description": "A Faculty Development Program aimed at enhancing teaching techniques and professional growth.",
         "topics": [
           "The program starts with modern pedagogical approaches, helping educators create engaging and effective learning experiences.",
@@ -155,7 +155,7 @@ const coursesData = [
       {
         "id": 11,
         "title": "DesignThinking",
-        "imageUrl": "/images/pic2.png?height=200&width=200",
+        "imageUrl": "/images/pic2.png",
         "description": "A course focused on fostering innovation and problem-solving using the Design Thinking methodology.",
         "topics": [
           "The course begins by introducing the five core stages of Design Thinking: Empathize, Define, Ideate, Prototype, and Test, ensuring a structured framework.",
@@ -169,7 +169,7 @@ const coursesData = [
       {
         "id": 12,
         "title": "Entrepreneurship",
-        "imageUrl": "/images/pic.png?height=200&width=200",
+        "imageUrl": "/images/pic.png",
         "description": "A course empowering individuals with the knowledge and skills to start and run successful businesses.",
         "topics": [
           "The course starts with an introduction to entrepreneurship, focusing on core principles like risk management, innovation, and business ethics.",
@@ -183,7 +183,7 @@ const coursesData = [
       {
         "id": 13,
         "title": "StartupTraining",
-        "imageUrl":"/images/file_00000000db7c622fa751207e560189b8_conversation_id=680644b7-f90c-8006-bb24-d26b133d85ac&message_id=a439cad4-6c9a-4e8e-8f7d-017d116e61b3.png?height=200&width=200",
+        "imageUrl":"/images/file_00000000db7c622fa751207e560189b8_conversation_id=680644b7-f90c-8006-bb24-d26b133d85ac&message_id=a439cad4-6c9a-4e8e-8f7d-017d116e61b3.png",
         "description": "A specialized course for aspiring entrepreneurs focusing on the essentials of launching a startup.",
         "topics": [
           "The course begins with ideation, guiding participants through validating ideas using market research and feasibility analysis.",
@@ -197,7 +197,7 @@ const coursesData = [
           {
             "id": 14,
             "title": "TechnicalandNon-TechnicalSkills",
-            "imageUrl": "/images/file_00000000469c61f8920a65222f5565e9_conversation_id=68063876-dbc8-8006-85e2-545d5e982bc8&message_id=5be18137-c0eb-4f74-871a-8761b81d8ab5.png?height=200&width=200",
+            "imageUrl": "/images/file_00000000469c61f8920a65222f5565e9_conversation_id=68063876-dbc8-8006-85e2-545d5e982bc8&message_id=5be18137-c0eb-4f74-871a-8761b81d8ab5.png",
             "description": "A comprehensive course designed to enhance both technical and interpersonal skills for well-rounded professional development and career growth.",
             "topics": [
               "This course provides a balanced approach to developing both technical and non-technical skills. Participants gain expertise in coding, data analysis, and mastering software tools critical to modern workplaces. Topics covered include programming languages, database management, and data visualization techniques.",
