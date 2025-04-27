@@ -9,7 +9,7 @@ export default function CoursesSection() {
       title: "C ++",
       description: "Learn C ++ from scratch",
       image: "/images/code.png?height=300&width=300",
-      link: "https://bravynex.vercel.app/details/C++",
+      link: "https://bravynex.vercel.app/details/cpp",
     },
     {
       id: 2,

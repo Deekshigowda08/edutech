@@ -82,7 +82,7 @@ const coursesData = [
   },
   {
     "id": 6,
-    "title": "C++",
+    "title": "cpp",
     "imageUrl": "/images/code.png",
     "description": "A foundational course focusing on essential C++ programming concepts and application development.",
     "topics": [
@@ -232,6 +232,8 @@ const coursesData = [
     
     export default async function CourseDetailsPage({ params }) {
       const { name } = params;
+      console.log(`Course Name: ${name}`);
+      
       const selectedCourse = coursesData.find((course) => course.title === name);
     
       return (
