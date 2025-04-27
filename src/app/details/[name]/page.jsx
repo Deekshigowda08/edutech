@@ -125,7 +125,7 @@ const coursesData = [
       },
       {
         "id": 9,
-        "title": "AiDevOps",
+        "title": "AiDevops",
         "imageUrl": "/images/IMG-20250418-WA0144.jpg",
         "description": "A course detailing the integration of AI techniques into DevOps workflows for enhanced automation and efficiency.",
         "topics": [
@@ -232,7 +232,6 @@ const coursesData = [
     
     export default async function CourseDetailsPage({ params }) {
       const { name } = params;
-      console.log(`Course Name: ${name}`);
       
       const selectedCourse = coursesData.find((course) => course.title === name);
     
@@ -293,7 +292,7 @@ const coursesData = [
                 {/* Topics */}
                 <div className="mt-8 text-left max-w-5xl mx-auto">
                   <h2 className="text-2xl font-semibold mb-4">Topics Covered:</h2>
-                  <ul className="list-disc list-inside space-y-2 text-base">
+                  <ul className="list-disc list-inside  space-y-2 text-lg">
                     {selectedCourse.topics.map((topic, index) => (
                       <li key={index}>{topic}</li>
                     ))}
