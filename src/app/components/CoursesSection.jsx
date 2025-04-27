@@ -8,35 +8,35 @@ export default function CoursesSection({ id }) {
       title: "WEB DEVELOPMENT",
       description: "Build responsive, dynamic websites using the latest front-end and back-end technologies...",
       image: "/images/IMG-20250418-WA0138.jpg?height=200&width=200",
-      link: "/pagenotupdated",
+      link: "details/WebDevelopment",
     },
     {
       id: 2,
       title: "GRAPHIC DESIGNING",
       description: "Craft visually compelling designs blending creativity with modern digital tools and techniques...",
       image: "/images/random.png?height=200&width=200",
-      link: "/pagenotupdated",
+      link: "details/GraphicDesigning",
     },
     {
       id: 3,
       title: "C PROGRAMMING",
       description: "Create efficient, scalable software using C for critical applications and system-level programming...",
       image: "/images/IMG-20250418-WA0139.jpg?height=200&width=200",
-      link: "/pagenotupdated",
+      link: "details/CProgramming",
     },
     {
       id: 4,
       title: "EMBEDDED TRAINING",
       description: "Develop robust real-time systems and firmware optimized for embedded hardware platforms...",
       image: "/images/IMG-20250418-WA0142.jpg?height=300&width=300",
-      link: "/pagenotupdated",
+      link: "details/EmbeddedTraining",
     },
     {
       id: 5,
       title: "AI DATA ENGINEERING",
       description: "Design intelligent data pipelines and solutions leveraging cutting-edge AI and analytics technologies....",
       image: "/images/IMG-20250418-WA0144.jpg?height=200&width=200",
-      link: "/pagenotupdated",
+      link: "details/AIDataEngineering",
     },
     {
       id: 6,
@@ -45,6 +45,7 @@ export default function CoursesSection({ id }) {
       image: "/images/IMG-20250418-WA0154.jpg?height=200&width=200",
       link: "/morecourse",
     },
+   
   ];
 
   return (
