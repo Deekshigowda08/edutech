@@ -262,7 +262,7 @@ const coursesData = [
               <div className="absolute left-1/2 transform -translate-x-1/2">
                 <Link href="/" className="flex items-center">
                  <Image
-                           src="/images/Ashwin_logo.png"
+                           src="/images/logo.png"
                            alt="Bravynex Logo"
                            width={110}
                            height={110}
@@ -288,7 +288,7 @@ const coursesData = [
 
         <div className="mt-8 bg-black w-screen px-14 pt-2 pb-10 h-[100%] text-white">
           <h2 className="text-2xl font-bold mb-2">Topics Covered:</h2>
-          <ul className="list-disc list-inside space-y-1 text-sm">
+          <ul className="list-disc list-inside space-y-1 text-lg">
             {selectedCourse.topics.map((topic, index) => (
               <li key={index} className="italic">{topic}</li>
             ))}

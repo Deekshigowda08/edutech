@@ -48,7 +48,7 @@ export default function Home() {
     <div className="flex w-full justify-center">
       <Link href="/" className="flex items-center">
         <Image
-          src="/images/Ashwin_logo.png"
+          src="/images/logo.png"
           alt="Bravynex Logo"
           width={110}
           height={110}
