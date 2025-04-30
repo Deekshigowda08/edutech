@@ -79,8 +79,8 @@ export default function CoursesSection() {
   return (
     <>
       {/* Sticky Navbar */}
-      <header className="border-b w-full border-gray-200 py-2 bg-white z-50 sticky top-0">
-        <div className="container mx-auto  flex items-center justify-between">
+      <header className="fixed top-0 left-0 right-0 border-b border-gray-200 py-12 bg-white z-50 shadow-md">
+      <div className="container mx-auto px-4 flex items-center justify-between">
           {/* Logo and Title */}
           <div className="flex w-full justify-center ">
             <Link href="/" className="flex items-center">

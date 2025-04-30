@@ -288,7 +288,7 @@ const coursesData = [
 
         <div className="mt-8 bg-black w-screen px-14 pt-2 pb-10 h-[100%] text-white">
           <h2 className="text-2xl font-bold mb-2">Topics Covered:</h2>
-          <ul className="list-disc list-inside space-y-1 text-lg">
+          <ul className="list-disc list-inside space-y-1 text-md">
             {selectedCourse.topics.map((topic, index) => (
               <li key={index} className="italic">{topic}</li>
             ))}
@@ -297,7 +297,7 @@ const coursesData = [
       </div>
 
       {/* Right Section: Card */}
-      <div className="bg-gray-100 h-[30%] rounded-2xl shadow-3xl p-6 w-full max-w-xs text-center mt-10 mx-auto lg:mx-0">
+      <div className="md:bg-gray-100 lg:bg-gray-100 bg-gray-300 h-[30%] rounded-2xl shadow-3xl p-6 w-full max-w-xs text-center mt-10 mx-auto lg:mx-0">
         <Image
           src={selectedCourse.imageUrl}
           alt={selectedCourse.title}

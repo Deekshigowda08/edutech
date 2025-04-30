@@ -32,7 +32,7 @@ export default function Home() {
     <div  onClick={handleOutsideClick} className="min-h-screen bg-[url(/images/freepik__expand__34612.png)] md:bg-[url(/images/firstpage.jpeg)] absolute  bg-fixed w-full h-[90%] bg-cover bg-white bg-border ">
 
 <header id="home" className="fixed top-0 left-0 w-full border-b border-gray-200 bg-white z-50">
-  <div className="container mx-auto px-4 flex items-center justify-between relative h-20">
+  <div className="container mx-auto px-4 flex items-center justify-evenly relative h-20">
     {/* Sidebar Toggle Button */}
     <button
       className="text-black z-50"
@@ -45,7 +45,7 @@ export default function Home() {
     </button>
 
     {/* Center Logo */}
-    <div className="flex w-full justify-center">
+    <div className="flex w-full mx-10 justify-between md:justify-center">
       <Link href="/" className="flex items-center">
         <Image
           src="/images/logo.png"
@@ -53,7 +53,7 @@ export default function Home() {
           width={110}
           height={110}
         />
-        <span className="text-xl md:text-2xl font-bold ml-2">BRAVYNEX ENGINEERING</span>
+        <span className="text-xl md:text-2xl font-bold ">BRAVYNEX ENGINEERING</span>
       </Link>
     </div>
 
