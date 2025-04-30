@@ -297,7 +297,7 @@ const coursesData = [
       </div>
 
       {/* Right Section: Card */}
-      <div className="md:bg-gray-100 lg:bg-gray-100 bg-gray-300 h-[30%] rounded-2xl shadow-3xl p-6 w-full max-w-xs text-center mt-10 mx-auto lg:mx-0">
+      <div className="md:bg-gray-100 lg:bg-gray-100 bg-gray-300 h-[40%] rounded-2xl shadow-3xl p-6 w-full max-w-xs text-center mt-10 mx-auto lg:mx-0">
         <Image
           src={selectedCourse.imageUrl}
           alt={selectedCourse.title}
