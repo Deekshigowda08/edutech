@@ -79,7 +79,7 @@ export default function CoursesSection() {
   return (
     <>
       {/* Sticky Navbar */}
-      <header className="fixed top-0 left-0 right-0 border-b border-gray-200 py-12 bg-white z-50 shadow-md">
+      <header className="fixed top-0 left-0 right-0 border-b border-gray-200  bg-white z-50 shadow-md">
       <div className="container mx-auto px-4 flex items-center justify-between">
           {/* Logo and Title */}
           <div className="flex w-full justify-center ">
@@ -101,7 +101,7 @@ export default function CoursesSection() {
       </header>
   
       {/* Content Section */}
-      <section className="w-full py-6 bg-black">
+      <section className="w-full pt-28 pb-6 bg-black">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {courses.map((course) => (
