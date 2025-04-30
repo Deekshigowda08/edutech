@@ -249,25 +249,24 @@ const coursesData = [
     ];
     
     export default async function CourseDetailsPage({ params }) {
-      const { name } = params;
+      const { name } = await params;
     
       const selectedCourse = coursesData.find((course) => course.title === name);
     
       return (
         <>
           {/* Fixed Header Section */}
-          <header className="fixed top-0 left-0 right-0 border-b border-gray-200 py-10 bg-white z-50 shadow-md">
+          <header className="fixed top-0 left-0 right-0 border-b border-gray-200 py-12 bg-white z-50 shadow-md">
             <div className="container mx-auto px-4 flex items-center justify-between">
               {/* Logo and Title */}
               <div className="absolute left-1/2 transform -translate-x-1/2">
                 <Link href="/" className="flex items-center">
-                  <Image
-                    src="/images/ashwin_logo.png"
-                    alt="Bravynex Logo"
-                    width={170}
-                    height={170}
-                    priority
-                  />
+                 <Image
+                           src="/images/Ashwin_logo.png"
+                           alt="Bravynex Logo"
+                           width={110}
+                           height={110}
+                         />
                   <span className="text-xl font-bold ml-2 text-black">BRAVYNEX ENGINEERING</span>
                 </Link>
               </div>
@@ -282,7 +281,7 @@ const coursesData = [
   {selectedCourse ? (
     <div className="flex flex-col-reverse lg:flex-row">
       {/* Left Section: Description & Topics */}
-      <div className="lg:w-2/3 bg-white text-black pt-12">
+      <div className="lg:w-2/3 bg-white text-black pt-20">
         <h1 className="text-3xl font-bold mb-4 px-6 max-w-3xl">
           A creative course covering essential {selectedCourse.title.toLowerCase().replace("-"," ")} principles, tools, and real-world applications
         </h1>
@@ -298,7 +297,7 @@ const coursesData = [
       </div>
 
       {/* Right Section: Card */}
-      <div className="bg-gray-100 h-[40%] rounded-2xl shadow-3xl p-6 w-full max-w-xs text-center mx-auto lg:mx-0">
+      <div className="bg-gray-100 h-[30%] rounded-2xl shadow-3xl p-6 w-full max-w-xs text-center mt-10 mx-auto lg:mx-0">
         <Image
           src={selectedCourse.imageUrl}
           alt={selectedCourse.title}

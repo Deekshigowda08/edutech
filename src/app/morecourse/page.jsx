@@ -85,11 +85,11 @@ export default function CoursesSection() {
           <div className="flex w-full justify-center ">
             <Link href="/" className="flex items-center">
               <Image
-                src="/images/Ashwin_logo.png"
-                alt="bravynex Logo"
-                width={100}
-                height={100}
-              />
+                        src="/images/Ashwin_logo.png"
+                        alt="Bravynex Logo"
+                        width={110}
+                        height={110}
+                      />
               <span className="text-2xl font-bold ml-2">
                 BRAVYNEX ENGINEERING
               </span>
