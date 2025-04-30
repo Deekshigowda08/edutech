@@ -9,7 +9,7 @@ export default function CoursesSection() {
       title: "C ++",
       description: "Learn C ++ from scratch",
       image: "/images/code.png?height=300&width=300",
-      link: "https://bravynex.vercel.app/details/cpp",
+      link: "https://bravynex.vercel.app/details/Cpp-Programing",
     },
     {
       id: 2,
@@ -30,21 +30,21 @@ export default function CoursesSection() {
       title: "AI DEVOPS",
       description: "Develop robust real-time systems and firmware optimized for embedded hardware platforms...",
       image: "/images/IMG-20250418-WA0144.jpg?height=300&width=300",
-      link: "https://bravynex.vercel.app/details/AiDevops",
+      link: "https://bravynex.vercel.app/details/Ai-Devops",
     },
     {
       id: 5,
       title: "FDP PROGRAM",
       description: "Design intelligent data pipelines and solutions leveraging cutting-edge AI and analytics technologies....",
       image: "/images/pic3.png?height=200&width=200",
-      link: "https://bravynex.vercel.app/details/FDPProgram",
+      link: "https://bravynex.vercel.app/details/FDP-Program",
     },
     {
       id: 6,
       title: "DESIGN THINKING",
       description: "Build responsive, dynamic websites using the latest front-end and back-end technologies...",
       image: "/images/pic2.png?height=200&width=200",
-      link: "https://bravynex.vercel.app/details/DesignThinking",
+      link: "https://bravynex.vercel.app/details/Design-Thinking",
     },
     {
       id: 7,
@@ -58,79 +58,87 @@ export default function CoursesSection() {
       title: "STARTUP TRAINING",
       description: "Discover innovative solutions and unlock new possibilities across various domains...",
       image: "/images/startup.png?height=200&width=200",
-      link: "https://bravynex.vercel.app/details/StartupTraining",
+      link: "https://bravynex.vercel.app/details/Startup-Training",
     },
     {
       id: 9,
       title: "TECHNICAL AND NON TECHNICAL",
       description: "welcome you to our training program, where we offer a unique blend of technical and non-technical courses designed to empower individuals with the skills they need to excel in today's competitive job market.",
       image: "/images/pic4.png?height=200&width=200",
-      link: "https://bravynex.vercel.app/details/TechnicalandNon-TechnicalSkills",
+      link: "https://bravynex.vercel.app/details/Technical-and-Non-TechnicalSkills",
     },
     {
       id: 10,
       title: "SOFT SKILLS",
       image: "/images/realistic Indian photo of training of communication skills.png",
       description: "A course dedicated to building essential soft skills for professional and personal success.",
-      link: "https://bravynex.vercel.app/details/SoftSkills",
+      link: "https://bravynex.vercel.app/details/Soft-Skills",
     }
   ];
 
   return (
     <>
-    
-    <header className="border-b w-full border-gray-200 py-8 bg-white z-50">
-    <div className="container mx-auto px-4 flex items-center justify-between">
-      
-      {/* Logo and Title */}
-      <div className="absolute left-1/2 transform -translate-x-1/2">
-        <Link href="/" className="flex items-center">
-          <Image
-            src="/images/ashwin_logo.png"
-            alt="bravynex Logo"
-            width={100}
-            height={100}
-          />
-          <span className="text-2xl font-bold ml-2">BRAVYNEX</span>
-        </Link>
-      </div>
-      {/* Spacer for Header Balance */}
-      <div className="w-8"></div>
-    </div>
-  </header>
-    <section className="w-full py-6 bg-black">
-        
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {courses.map((course) => (
-            <div key={course.id} className="bg-white rounded-md overflow-hidden p-5 flex flex-col">
-              <div className="mb-3 flex justify-center">
-                <Image
-                  src={course.image || "/placeholder.svg"}
-                  alt={course.title}
-                  width={150} // Reduced image width
-                  height={150} // Reduced image height
-                  className="object-contain"
-                />
-              </div>
-
-              <h3 className="text-xs font-medium uppercase tracking-wider mb-2">{course.title}</h3>
-
-              <p className="text-xs mb-4 flex-grow">{course.description}</p>
-
-              <div className="mt-auto">
-                <Link
-                  href={course.link}
-                  className="inline-block bg-black text-white text-xs py-2 px-4 rounded-full hover:bg-gray-800 transition-colors"
-                >
-                  Explore →
-                </Link>
-              </div>
-            </div>
-          ))}
+      {/* Sticky Navbar */}
+      <header className="border-b w-full border-gray-200 py-2 bg-white z-50 sticky top-0">
+        <div className="container mx-auto  flex items-center justify-between">
+          {/* Logo and Title */}
+          <div className="flex w-full justify-center ">
+            <Link href="/" className="flex items-center">
+              <Image
+                src="/images/Ashwin_logo.png"
+                alt="bravynex Logo"
+                width={100}
+                height={100}
+              />
+              <span className="text-2xl font-bold ml-2">
+                BRAVYNEX ENGINEERING
+              </span>
+            </Link>
+          </div>
+          {/* Spacer for Header Balance */}
+          <div className="w-8"></div>
         </div>
-      </div>
-    </section>
+      </header>
+  
+      {/* Content Section */}
+      <section className="w-full py-6 bg-black">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {courses.map((course) => (
+              <div
+                key={course.id}
+                className="bg-white rounded-md overflow-hidden p-5 flex flex-col transform transition-transform duration-300 hover:scale-105 hover:shadow-lg sticky md:static"
+                style={{ top: `${70 + course.id * 30}px` }}
+              >
+                <div className="mb-3 flex justify-center">
+                  <Image
+                    src={course.image || '/placeholder.svg'}
+                    alt={course.title}
+                    width={150} // Reduced image width
+                    height={150} // Reduced image height
+                    className="object-contain"
+                  />
+                </div>
+  
+                <h3 className="text-xs font-medium uppercase tracking-wider mb-2">
+                  {course.title}
+                </h3>
+  
+                <p className="text-xs mb-4 flex-grow">{course.description}</p>
+  
+                <div className="mt-auto">
+                  <Link
+                    href={course.link}
+                    className="inline-block bg-black text-white text-xs py-2 px-4 rounded-full hover:bg-gray-800 transition-colors"
+                  >
+                    Explore →
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
     </>
   );
 }

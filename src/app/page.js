@@ -28,126 +28,96 @@ export default function Home() {
   };
 
   return (
-    <div  onClick={handleOutsideClick} className="min-h-screen bg-white">
+    <div className="relative pt-20">
+    <div  onClick={handleOutsideClick} className="min-h-screen bg-[url(/images/freepik__expand__34612.png)] md:bg-[url(/images/firstpage.jpeg)] absolute  bg-fixed w-full h-[90%] bg-cover bg-white bg-border ">
 
-      <header id="home" className="border-b w-full border-gray-200 py-4 bg-white z-50">
-        <div className="container mx-auto px-4 flex items-center justify-between">
-          <button
-            className="text-black"
-            onClick={(e) => {
-              e.stopPropagation();
-              handleSidebarToggle(); // Avoid calling setSidebarOpen directly here
-            }}
-            
-          >
-            <Menu className="h-8 w-8" />
-          </button>
-          <div className="absolute left-1/2 transform -translate-x-1/2">
-            <Link href="/" className="flex items-center">
-              <Image
-                src="/images/ashwin_logo.png"
-                alt="Bravynex Logo"
-                width={100}
-                height={100}
-              />
-              <span className="text-2xl font-bold ml-2">BRAVYNEX</span>
-            </Link>
-          </div>
-          <div className="w-8"></div>
-        </div>
-        {isSidebarOpen && (
-  <div
-    className="fixed top-0 left-0 h-full w-64 bg-gray-100 shadow-lg z-40"
-    onClick={(e) => e.stopPropagation()}
-  >
-    <nav className="flex flex-col p-4">
-     < div className="flex items-center justify-between mb-4">
-        <h2 className="text-lg font-bold">Menu</h2>
-        <button
-          className="text-black"
-          onClick={handleSidebarToggle}
-        >
-          <IoClose />
-        </button>
-      </div>
-      <button
-        className="my-2 mt-8 text-left text-lg font-semibold text-black"
-        onClick={() => scrollToSection("home")}
-      >
-        Home
-      </button>
-      <button
-        className="my-2 text-left text-lg font-semibold text-black"
-        onClick={() => scrollToSection("courses")}
-      >
-        Courses
-      </button>
-      <button
-        className="my-2 text-left text-lg font-semibold text-black"
-        onClick={() => scrollToSection("features")}
-      >
-        Explore
-      </button>
-      <button
-        className="my-2 text-left text-lg font-semibold text-black"
-        onClick={() => scrollToSection("contact")}
-      >
-        Contact
-      </button>
-    </nav>
+<header id="home" className="fixed top-0 left-0 w-full border-b border-gray-200 bg-white z-50">
+  <div className="container mx-auto px-4 flex items-center justify-between relative h-20">
+    {/* Sidebar Toggle Button */}
+    <button
+      className="text-black z-50"
+      onClick={(e) => {
+        e.stopPropagation();
+        handleSidebarToggle();
+      }}
+    >
+      <Menu className="h-8 w-8" />
+    </button>
+
+    {/* Center Logo */}
+    <div className="flex w-full justify-center">
+      <Link href="/" className="flex items-center">
+        <Image
+          src="/images/Ashwin_logo.png"
+          alt="Bravynex Logo"
+          width={110}
+          height={110}
+        />
+        <span className="text-xl md:text-2xl font-bold ml-2">BRAVYNEX ENGINEERING</span>
+      </Link>
+    </div>
+
+    {/* Placeholder to balance space */}
+    <div className="w-8"></div>
   </div>
-)}
 
-      </header>
+  {/* Sidebar when open */}
+  {isSidebarOpen && (
+    <div
+      className="fixed top-0 left-0 h-full w-64 bg-gray-100 shadow-lg z-40"
+      onClick={(e) => e.stopPropagation()}
+    >
+      <nav className="flex flex-col p-4">
+        {/* Sidebar Header */}
+        <div className="flex items-center justify-between mb-6">
+          <h2 className="text-lg font-bold">Menu</h2>
+          <button className="text-black" onClick={handleSidebarToggle}>
+            <IoClose size={24} />
+          </button>
+        </div>
 
+        {/* Sidebar Links */}
+        {["home", "courses", "features", "contact"].map((item) => (
+          <button
+            key={item}
+            className="my-2 text-left text-lg font-semibold text-black"
+            onClick={() => scrollToSection(item)}
+          >
+            {item.charAt(0).toUpperCase() + item.slice(1)}
+          </button>
+        ))}
+      </nav>
+    </div>
+  )}
+</header>
+
+
+      <div className="md:h-[55%] h-[45%]"></div>
       {/* Hero Section */}
-      <section className="pt-2">
-        <div className="container min-w-full mx-auto">
-          <h2 className="text-center text-lg uppercase tracking-wider">
-            Empowering the Innovators of Tomorrow with Knowledge and Experience
-          </h2>
-
-          {/* Hero Image */}
-          <div className="max-w-4xl mb-1.5 mx-auto">
-            <Image
-              src="/images/firstpage.png"
-              alt="Students in a learning environment with presenter"
-              width={200}
-              height={100}
-              className="w-fit justify-center mx-auto"
-            />
-          </div>
-
-          {/* Inspirational Quote */}
+      <section >
+      <div >
           <div className="bg-black text-white text-center">
-            <h2 className="text-2xl md:text-3xl pt-5 font-bold ">
-              &quot;Genius is one percent inspiration and ninety-nine percent perspiration.&quot;
+            <h2 className="text-xl px-2 md:text-3xl pt-5 font-bold ">
+              &quot;To be a global leader in delivering innovative products and reliable services that empower businesses and enrich lives..&quot;
             </h2>
-            <p className="text-sm pt-2">-Edison</p>
+            <p className="text-sm pt-2">-Vision</p>
           </div>
 
           {/* Description */}
           <div className="bg-black text-white p-8">
             <div className="max-w-6xl mx-auto">
-              <p className="text-lg leading-relaxed mb-6">
+              <p className="text-lg leading-relaxed ">
                 <span className="text-4xl font-serif leading-none">W</span>
-                elcome to Bravynex Online Courses, where learning meets
-                convenience! We offer a wide range of engaging and interactive
-                courses designed to suit all skill levels and interests. From
-                professional development to creative hobbies, our expert-led
-                programs ensure practical, real-world knowledge you can apply
-                immediately. With flexible schedules, a user-friendly platform,
-                and personalized support, we make learning accessible and
-                enjoyable. Whether you&apos;re mastering a new skill or exploring a
-                passion, Bravynex is here to guide you every step of the way. Join
-                our community of learners today and unlock your potential, all
-                from the comfort of your home. Let&apos;s grow together!
+                elcome to Bravynex Online Courses,Where learning meets convenience! Explore engaging courses tailored to all skill levels and interests—from professional growth to creative hobbies. Our expert-led programs deliver practical knowledge for immediate use. With flexible schedules, an easy-to-use platform, and personalized support, Bravynex makes learning enjoyable and accessible. Unlock your potential and grow with us, all from the comfort of your home!
               </p>
+              <p className="text-lg leading-relaxed mb-6">
+              Our mission is to create exceptional value for our customers through high-quality products, personalized services, and cutting-edge solutions. We strive to foster long-term partnerships, drive continuous innovation, and uphold integrity in everything we do.
+                </p>
             </div>
           </div>
         </div>
         <div>
-          <h1 className="max-w-screen text-center my-2 text-4xl font-bold text-black">
+          <h1 className="max-w-screen text-center  text-4xl bg-black font-bold text-white">
             Courses We Offer
           </h1>
         </div>
@@ -155,6 +125,7 @@ export default function Home() {
       <CoursesSection id="courses" />
       <FeaturesSection id="features" />
       <Contact id="contact" />
+    </div>
     </div>
   );
 }

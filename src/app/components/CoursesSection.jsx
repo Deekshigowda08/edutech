@@ -8,35 +8,35 @@ export default function CoursesSection({ id }) {
       title: "WEB DEVELOPMENT",
       description: "Build responsive, dynamic websites using the latest front-end and back-end technologies...",
       image: "/images/IMG-20250418-WA0138.jpg?height=200&width=200",
-      link: "details/WebDevelopment",
+      link: "details/Web-Development",
     },
     {
       id: 2,
       title: "GRAPHIC DESIGNING",
       description: "Craft visually compelling designs blending creativity with modern digital tools and techniques...",
       image: "/images/random.png?height=200&width=200",
-      link: "details/GraphicDesigning",
+      link: "details/Graphic-Designing",
     },
     {
       id: 3,
       title: "C PROGRAMMING",
       description: "Create efficient, scalable software using C for critical applications and system-level programming...",
       image: "/images/IMG-20250418-WA0139.jpg?height=200&width=200",
-      link: "details/CProgramming",
+      link: "details/C-Programming",
     },
     {
       id: 4,
       title: "EMBEDDED TRAINING",
       description: "Develop robust real-time systems and firmware optimized for embedded hardware platforms...",
       image: "/images/IMG-20250418-WA0142.jpg?height=300&width=300",
-      link: "details/EmbeddedTraining",
+      link: "details/Embedded-Training",
     },
     {
       id: 5,
       title: "AI DATA ENGINEERING",
       description: "Design intelligent data pipelines and solutions leveraging cutting-edge AI and analytics technologies....",
       image: "/images/IMG-20250418-WA0144.jpg?height=200&width=200",
-      link: "details/AIDataEngineering",
+      link: "details/AI-Data-Engineering",
     },
     {
       id: 6,
@@ -52,9 +52,13 @@ export default function CoursesSection({ id }) {
     
     <section id={id} className="w-full py-6 bg-black">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {courses.map((course) => (
-            <div key={course.id} className="bg-white rounded-md overflow-hidden p-5 flex flex-col">
+            <div
+            key={course.id}
+            className={`bg-white rounded-md overflow-hidden p-5 flex flex-col transform transition-transform duration-300 hover:scale-105 hover:shadow-lg sticky md:static`}
+  style={{ top: `${100 + course.id * 30}px` }}
+          >
               <div className="mb-3 flex justify-center">
                 <Image
                   src={course.image || "/placeholder.svg"}
