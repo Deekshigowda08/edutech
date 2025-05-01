@@ -259,7 +259,7 @@ const coursesData = [
           <header className="fixed top-0 left-0 right-0 border-b border-gray-200  bg-white z-50 shadow-md">
       <div className="container w-full  flex items-center justify-between">
           {/* Logo and Title */}
-          <div className="flex w-full py-1 justify-evenly items-center">
+          <div className="flex w-full py-4 justify-evenly items-center">
             <Link href="/" className="flex w-full justify-around md:pr-56 items-center">
               <Image
                         src="/images/ashiwin_lap_logo.png"
@@ -267,7 +267,7 @@ const coursesData = [
                         width={170}
                         height={170}
                       />
-              <span className="text-2xl font-bold ml-2">
+              <span className="md:text-2xl text-lg font-bold ml-2">
                COURSE DETAILS
               </span>
             </Link>
@@ -308,9 +308,9 @@ const coursesData = [
           className="mx-auto mb-4 rounded-md"
         />
         <h3 className="text-lg font-bold text-black mb-4">{selectedCourse.title.replace("-"," ")}</h3>
-        <button className="bg-blue-500 text-white font-bold px-6 py-2 rounded-full hover:bg-blue-600 transition">
+        <a href={`https://Wa.me/+919353164806?text=Hello%20Sir%20I%20wanted%20to%20register%20in%20${selectedCourse.title.replace("-"," ")}%20course`} className="bg-blue-500 text-white font-bold px-6 py-2 hover:cursor-pointer rounded-full hover:bg-blue-600 transition">
           Contact
-        </button>
+        </a>
       </div>
     </div>
   ) : (
