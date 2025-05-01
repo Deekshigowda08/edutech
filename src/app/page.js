@@ -45,15 +45,15 @@ export default function Home() {
     </button>
 
     {/* Center Logo */}
-    <div className="flex w-full mx-10 justify-between md:justify-center">
-      <Link href="/" className="flex items-center">
+    <div className="flex w-full mx-10 justify-between md:justify-around items-center">
+      <Link href="/" className="flex w-full justify-center items-center">
         <Image
-          src="/images/logo.png"
+          src="/images/ashiwin_lap_logo.png"
           alt="Bravynex Logo"
-          width={110}
-          height={110}
+          width={150}
+          height={150}
         />
-        <span className="text-xl md:text-2xl font-bold ">BRAVYNEX ENGINEERING</span>
+        <span className="text-xl md:text-2xl mx-5  font-bold ">BRAVYNEX ENGINEERING</span>
       </Link>
     </div>
 

@@ -256,25 +256,27 @@ const coursesData = [
       return (
         <>
           {/* Fixed Header Section */}
-          <header className="fixed top-0 left-0 right-0 border-b border-gray-200 py-12 bg-white z-50 shadow-md">
-            <div className="container mx-auto px-4 flex items-center justify-between">
-              {/* Logo and Title */}
-              <div className="absolute left-1/2 transform -translate-x-1/2">
-                <Link href="/" className="flex items-center">
-                 <Image
-                           src="/images/logo.png"
-                           alt="Bravynex Logo"
-                           width={110}
-                           height={110}
-                         />
-                  <span className="text-xl font-bold ml-2 text-black">BRAVYNEX ENGINEERING</span>
-                </Link>
-              </div>
-    
-              {/* Spacer */}
-              <div className="w-7"></div>
-            </div>
-          </header>
+          <header className="fixed top-0 left-0 right-0 border-b border-gray-200  bg-white z-50 shadow-md">
+      <div className="container w-full  flex items-center justify-between">
+          {/* Logo and Title */}
+          <div className="flex w-full py-1 justify-evenly items-center">
+            <Link href="/" className="flex w-full justify-around md:pr-56 items-center">
+              <Image
+                        src="/images/ashiwin_lap_logo.png"
+                        alt="Bravynex Logo"
+                        width={170}
+                        height={170}
+                      />
+              <span className="text-2xl font-bold ml-2">
+               COURSE DETAILS
+              </span>
+            </Link>
+            
+          </div>
+          {/* Spacer for Header Balance */}
+          <div className="w-8"></div>
+        </div>
+      </header>
     
           {/* Split Layout Section */}
           <div className="pt-24 h-fit bg-white lg:h-screen lg:overflow-hidden overflow-auto">

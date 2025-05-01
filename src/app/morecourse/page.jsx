@@ -63,7 +63,7 @@ export default function CoursesSection() {
     {
       id: 9,
       title: "TECHNICAL AND NON TECHNICAL",
-      description: "Welcome to our training program! We offer a blend of technical and non-technical courses to equip you with skills to thrive in today's competitive job market.",
+      description: "Welcome to our training program! We offer a blend of technical and non-technical courses to equip you with skills to thrive in today's competitive job.",
       image: "/images/pic4.png",
       link: "https://bravynex.vercel.app/details/Technical-and-Non-TechnicalSkills",
     },
@@ -80,20 +80,21 @@ export default function CoursesSection() {
     <>
       {/* Sticky Navbar */}
       <header className="fixed top-0 left-0 right-0 border-b border-gray-200  bg-white z-50 shadow-md">
-      <div className="container mx-auto px-4 flex items-center justify-between">
+      <div className="container w-full  flex items-center justify-between">
           {/* Logo and Title */}
-          <div className="flex w-full justify-center ">
-            <Link href="/" className="flex items-center">
+          <div className="flex w-full py-1 justify-evenly items-center">
+            <Link href="/" className="flex w-full justify-around md:pr-30 items-center">
               <Image
-                        src="/images/logo.png"
+                        src="/images/ashiwin_lap_logo.png"
                         alt="Bravynex Logo"
-                        width={110}
-                        height={110}
+                        width={150}
+                        height={150}
                       />
               <span className="text-2xl font-bold ml-2">
-                BRAVYNEX ENGINEERING
+                EXPLORE MORE
               </span>
             </Link>
+            
           </div>
           {/* Spacer for Header Balance */}
           <div className="w-8"></div>
@@ -116,7 +117,7 @@ export default function CoursesSection() {
                 alt={course.title}
                 layout="fill"
                 objectFit="cover"
-                className="w-full z-0"
+                className="w-full  z-0"
                 style={{ opacity: 0.9,
                 filter: "blur(1px) brightness(0.5)"  // Adjust brightness and blur as needed
                  }} 
