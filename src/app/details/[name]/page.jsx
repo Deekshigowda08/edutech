@@ -264,8 +264,8 @@ const coursesData = [
               <Image
                         src="/images/ashiwin_lap_logo.png"
                         alt="Bravynex Logo"
-                        width={170}
-                        height={170}
+                        width={200}
+                        height={200}
                       />
               <span className="md:text-2xl text-lg font-bold ml-2">
                COURSE DETAILS

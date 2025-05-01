@@ -50,8 +50,8 @@ export default function Home() {
         <Image
           src="/images/ashiwin_lap_logo.png"
           alt="Bravynex Logo"
-          width={170}
-          height={170}
+          width={200}
+          height={200}
         />
       </Link>
     </div>
@@ -68,7 +68,7 @@ export default function Home() {
     >
       <nav className="flex flex-col p-4">
         {/* Sidebar Header */}
-        <div className="flex items-center justify-between mb-6">
+        <div className="flex items-center justify-between my-6">
           <h2 className="text-lg font-bold">Menu</h2>
           <button className="text-black" onClick={handleSidebarToggle}>
             <IoClose size={24} />

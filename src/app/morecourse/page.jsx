@@ -87,8 +87,8 @@ export default function CoursesSection() {
               <Image
                         src="/images/ashiwin_lap_logo.png"
                         alt="Bravynex Logo"
-                        width={150}
-                        height={150}
+                        width={200}
+                        height={200}
                       />
               <span className="md:text-2xl text-lg font-bold ml-2">
                 EXPLORE MORE
