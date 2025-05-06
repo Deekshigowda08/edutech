@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Menu } from "lucide-react";
@@ -34,15 +34,17 @@ export default function Home() {
 <header id="home" className="fixed top-0 left-0 w-full border-b border-gray-200 bg-white z-50">
   <div className="container mx-auto px-4 flex items-center justify-evenly relative h-20">
     {/* Sidebar Toggle Button */}
-    <button
+    {!isSidebarOpen && <button
       className="text-black z-50"
       onClick={(e) => {
         e.stopPropagation();
         handleSidebarToggle();
       }}
     >
-      <Menu className="h-8 w-8" />
+      <Menu className="h-8 w-8 " />
     </button>
+    }
+    
 
     {/* Center Logo */}
     <div className="flex w-full mx-24 justify-between md:justify-around items-center">
