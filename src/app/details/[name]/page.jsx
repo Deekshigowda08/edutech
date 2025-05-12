@@ -308,7 +308,7 @@ const coursesData = [
           className="mx-auto mb-4 rounded-md"
         />
         <h3 className="text-lg font-bold text-black mb-4">{selectedCourse.title.replace("-"," ")}</h3>
-        <a href={`https://Wa.me/+919353164806?text=Hello%20Sir%20I%20wanted%20to%20register%20in%20${selectedCourse.title.replace("-"," ")}%20course`} className="bg-blue-500 text-white font-bold px-6 py-2 hover:cursor-pointer rounded-full hover:bg-blue-600 transition">
+        <a href={`https://Wa.me/+919019659246?text=Hello%20Sir%20I%20wanted%20to%20register%20in%20${selectedCourse.title.replace("-"," ")}%20course`} className="bg-blue-500 text-white font-bold px-6 py-2 hover:cursor-pointer rounded-full hover:bg-blue-600 transition">
           Contact
         </a>
       </div>

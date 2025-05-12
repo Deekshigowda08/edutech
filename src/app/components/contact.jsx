@@ -96,15 +96,15 @@ export default function Contact({ id }) {
               </form>
 
               <div className="flex items-center justify-center space-x-6 mt-2">
-                <a href="https://Wa.me/+919353164806" className="text-white hover:text-gray-200">
+                <a href="https://Wa.me/+919019659246" className="text-white hover:text-gray-200">
                   <span className="sr-only">Instagram</span>
                   <Instagram className="h-6 w-6" />
                 </a>
-                <a href="https://Wa.me/+919353164806" className="text-white hover:text-gray-200">
+                <a href="https://Wa.me/+919019659246" className="text-white hover:text-gray-200">
                   <span className="sr-only">WhatsApp</span>
                   <MessageCircle className="h-6 w-6" />
                 </a>
-                <a href="https://Wa.me/+919353164806" className="text-white hover:text-gray-200">
+                <a href="https://Wa.me/+919019659246" className="text-white hover:text-gray-200">
                   <span className="sr-only">Twitter</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -123,11 +123,11 @@ export default function Contact({ id }) {
                     <line x1="10" y1="12.2" x2="14" y2="12.2" />
                   </svg>
                 </a>
-                <a href="https://Wa.me/+919353164806" className="text-white hover:text-gray-200">
+                <a href="https://Wa.me/+919019659246" className="text-white hover:text-gray-200">
                   <span className="sr-only">LinkedIn</span>
                   <Linkedin className="h-6 w-6" />
                 </a>
-                <a href="https://Wa.me/+919353164806" className="text-white hover:text-gray-200">
+                <a href="https://Wa.me/+919019659246" className="text-white hover:text-gray-200">
                   <span className="sr-only">YouTube</span>
                   <Youtube className="h-6 w-6" />
                 </a>
