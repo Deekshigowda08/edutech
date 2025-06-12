@@ -96,7 +96,7 @@ export default function Contact({ id }) {
               </form>
 
               <div className="flex items-center justify-center space-x-6 mt-2">
-                <a href="https://Wa.me/+919019659246" className="text-white hover:text-gray-200">
+                <a href="https://www.instagram.com/bravynexengineering/profilecard/?igsh=MTdnbmVyaGR0amExcA==" className="text-white hover:text-gray-200">
                   <span className="sr-only">Instagram</span>
                   <Instagram className="h-6 w-6" />
                 </a>
