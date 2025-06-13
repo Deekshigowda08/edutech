@@ -33,23 +33,13 @@ export default function Contact({ id }) {
     "Innovation and Entrepreneurship (Startup) Training",
   ];
 
-  function sendEmail() {
+  async function sendEmail(formData) {
     const serviceId = "service_3u9meos";
     const templateId = "template_xr75hbg";
     const userId = "RB2SELaSlhZIBBaI9";
 
- const templateParams = {
-      name: name,
-      email: email,
-      phone: phone,
-      course: course,
-      segment: segment,
-      nameofin: nameofin,
-      message: message,
-    };
-
     emailjs
-      .send(serviceId, templateId, templateParams, userId)
+      .send(serviceId, templateId, formData, userId)
       .then((response) => {
         console.log("Email sent successfully!", response.status, response.text);
         toast("Message sent successfully. We will get back to you soon!", {
@@ -73,7 +63,8 @@ export default function Contact({ id }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    sendEmail();
+    if (!formRef.current) return;
+    sendEmail({name, email, phone, course, segment, nameofin, message});
   };
 
   return (
@@ -97,6 +88,7 @@ export default function Contact({ id }) {
               <div className="flex flex-col items-center justify-center space-y-6">
                 <h2 className="text-3xl md:text-4xl font-bold text-center">Send an Email</h2>
                 <form
+                  ref={formRef}
                   onSubmit={handleSubmit}
                   className="w-full max-w-md space-y-6"
                 >
