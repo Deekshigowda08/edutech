@@ -6,16 +6,16 @@ export default function FeaturesSection({ id }) {
       <div className="flex flex-col md:flex-row items-center bg-white py-12 px-6 md:px-12">
         <div className="md:w-1/3 mb-6 md:mb-0">
           <Image
-            src="/images/msme.jpg?height=300&width=300"
+            src="/images/colabration1.png?height=300&width=300"
             alt="Trainer teaching a student"
-            width={300}
-            height={300}
+            width={400}
+            height={400}
             className="mx-auto"
           />
         </div>
         <div className="md:w-2/3 md:pl-8">
           <p className="text-lg md:text-xl leading-relaxed mb-6">
-          Registered under<strong> MICRO, SMALL AND MEDIUM ENTERPRISES (MSME)</strong>, we design impactful courses that blend industry expertise with innovation to empower learners. Our content remains relevant and insightful, helping individuals achieve their goals, make meaningful progress in their careers, and contribute to a skilled workforce. Additionally, we provide internship opportunities that offer hands-on experience, bridging the gap between theory and practice to prepare learners for real-world challenges.
+          Registered under<strong> MICRO, SMALL AND MEDIUM ENTERPRISES (MSME) and National Skill Development Corporation (NSDC)</strong>,we design impactful courses that blend industry expertise with innovation to empower learners. Our content remains relevant and insightful, helping individuals achieve their goals, make meaningful progress in their careers, and contribute to a skilled workforce. Additionally, we provide internship opportunities that offer hands-on experience, bridging the gap between theory and practice to prepare learners for real-world challenges.
           </p>
           
         </div>
