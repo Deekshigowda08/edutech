@@ -47,13 +47,14 @@ export default function Home() {
     
 
     {/* Center Logo */}
-    <div className="flex w-full mx-24 justify-between md:justify-around items-center">
-      <Link href="/" className="flex w-full justify-center items-center">
+    <div className="flex w-full h-[90%] ml-10 md:ml-0 justify-between md:justify-around items-center">
+      <Link href="/" className="flex w-full h-[100%] justify-center items-center">
         <Image
-          src="/images/ashiwin_lap_logo.png"
+          src="/images/bravynexlogo.jpg"
           alt="Bravynex Logo"
-          width={200}
-          height={200}
+          width={380}
+          height={350}
+
         />
       </Link>
     </div>

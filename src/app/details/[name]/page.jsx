@@ -259,15 +259,15 @@ const coursesData = [
           <header className="fixed top-0 left-0 right-0 border-b border-gray-200  bg-white z-50 shadow-md">
       <div className="container w-full  flex items-center justify-between">
           {/* Logo and Title */}
-          <div className="flex w-full py-4 justify-evenly items-center">
-            <Link href="/" className="flex w-full justify-around md:pr-56 items-center">
+          <div className="flex w-full py-4 ml-2 md:ml-6 justify-between md:justify-evenly items-center">
+            <Link href="/" className="flex md:w-full w-[70%] justify-around md:pr-56 items-center">
               <Image
-                        src="/images/ashiwin_lap_logo.png"
+                        src="/images/bravynexlogo.jpg"
                         alt="Bravynex Logo"
-                        width={200}
-                        height={200}
+                        width={350}
+                        height={350}
                       />
-              <span className="md:text-2xl text-lg font-bold ml-2">
+              <span className="md:text-3xl text-center w-[100%] text-xs font-extrabold ml-10 md:ml-0">
                COURSE DETAILS
               </span>
             </Link>
